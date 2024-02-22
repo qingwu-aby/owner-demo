@@ -1,0 +1,29 @@
+[package]
+name = "咪咕音乐"
+version = "0.0.0"
+description = "咪咕音乐PC"
+authors = ["Yuan"]
+license = ""
+repository = ""
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+name = "tauri_app_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2.0.0-alpha", features = [] }
+
+[dependencies]
+tauri = { version = "2.0.0-alpha", features = ["macos-private-api"] }
+tauri-plugin-shell = "2.0.0-alpha"
+serde_json = "1.0"
+window-vibrancy = "0.4.3"
+rocket = "0.5"
+
+[features]
+# this feature is used for production builds or when `devPath` points to the filesystem
+# DO NOT REMOVE!!
+custom-protocol = ["tauri/custom-protocol"]

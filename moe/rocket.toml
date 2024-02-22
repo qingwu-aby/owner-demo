@@ -1,0 +1,21 @@
+[debug]
+
+[default]
+port = 9090
+address = "127.0.0.1"
+max_blocking = 512
+keep_alive = 5
+log_level = "normal"
+ident = "Rocket"
+ip_header = "X-Real-IP"
+temp_dir = "/tmp"
+cli_colors = true
+
+[default.limits]
+json = "5 Mib"
+
+[default.tls]
+
+[default.shutdown]
+ctrlc = true
+signals = ["term"]
