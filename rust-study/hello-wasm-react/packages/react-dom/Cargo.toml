@@ -1,7 +1,7 @@
 [package]
 name = "react-dom"
 version = "0.1.0"
-authors = ["YangYuan <yangyuan@kuaishou.com>"]
+authors = ["YangYuan"]
 edition = "2018"
 
 [lib]

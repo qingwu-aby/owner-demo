@@ -7,7 +7,9 @@
     "example": "examples"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build:react": "wasm-pack build packages/react --out-dir pkg/react --out-name jsx-dev-runtime",
+    "build:react-dom": "wasm-pack build packages/react-dom --out-dir pkg/react-dom --out-name index",
+    "build": "rm -rf packages/react/pkg && rm -rf packages/react-dom/pkg && npm run build:react && npm run build:react-dom"
   },
   "author": "",
   "license": "ISC"
