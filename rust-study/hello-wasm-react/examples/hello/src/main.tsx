@@ -2,9 +2,10 @@
  * @Author: yangyuan
  * @Description: 
  * @Date: 2024-06-03 16:47:28
- * @LastEditTime: 2024-06-03 17:50:03
+ * @LastEditTime: 2024-06-03 19:47:18
  */
-// import React from 'react'
+// "react": "file://../../packages/react/pkg/react",
+import React from 'react'
 import { createRoot } from 'react-dom'
 import { log} from '../utils/log-enhancer';
 // import App from './App.tsx'
